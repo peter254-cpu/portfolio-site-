@@ -1,0 +1,16 @@
+body, html {
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+  }
+  
+  .slick-carousel {
+    width: 100%;
+    overflow: hidden;  /* Prevent overflow on carousel container */
+  }
+  
+  .slick-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10px; /* Optional: Adds a little padding around each slide to prevent overflow */
+  }
+  
