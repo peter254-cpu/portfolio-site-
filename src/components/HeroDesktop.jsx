@@ -10,7 +10,7 @@ import React, { useRef } from 'react'
 import { useGLTF } from '@react-three/drei'
 
 const HeroDesktop = (props) => {
-  const { nodes, materials } = useGLTF('/models/gaming_desktop_pc_blend_file.glb')
+  const { nodes, materials } = useGLTF('/models/hero_desktop.glb')
   return (
     <group {...props} dispose={null}>
       <mesh
@@ -6123,5 +6123,5 @@ const HeroDesktop = (props) => {
   )
 }
 
-useGLTF.preload('/models/gaming_desktop_pc_blend_file.glb')
+useGLTF.preload('/models/hero_desktop.glb')
 export default HeroDesktop
