@@ -1,5 +1,8 @@
 import { useRef, useState } from "react"
 import  emailjs  from "@emailjs/browser"
+import toast from "react-hot-toast"
+
+
 
 const Contact = () => {
     const formRef = useRef()
@@ -24,7 +27,7 @@ const Contact = () => {
                 message: form.message
             }, 'JG5WM0dKQoPy02Emd');
             setLoading(false);
-            alert("Your Message Has been sent successfully");
+            toast.success("Your Message Has been sent successfully");
         setForm({
             name: '',
             email: '',
@@ -33,7 +36,7 @@ const Contact = () => {
         } catch (error) {
             setLoading(false);
             console.error(error);
-            alert("Something went wrong");
+            toast.error("Something went wrong");
         }
         setForm({})
     }
