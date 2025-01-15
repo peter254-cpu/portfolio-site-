@@ -1,7 +1,7 @@
 
 const Footer = () => {
   return (
-    <section className="w-dvw">
+    <section className="w-dvw" id="footer">
         <div className="pt-7 bg-gray-950 border-t border-gray-500 flex justify-between flex-wrap items-center p-4 mr-6">
         <div className="text-gray-200 flex gap-2">
             <p>Terms $ Conditions</p>

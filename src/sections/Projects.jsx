@@ -20,7 +20,7 @@ const Projects = () => {
         })
     }
   return (
-    <section className='c-space my-20'>
+    <section className='c-space my-20' id="work">
         <div className='flex items-center flex-col text-center '>
         <p className='head-text underline'>
             Notable Recent Solo Projects
